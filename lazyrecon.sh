@@ -133,7 +133,7 @@ cat ./$domain/$foldername/urllist.txt | xargs -P$subdomainThreads -I % sh -c "py
 aqua(){
 
 echo "Starting aquatone scan..."
-cat ./$domain/$foldername/urllist.txt | aquatone -chrome-path $chromiumPath -out ./$domain/$foldername/aqua_out -threads $auquatoneThreads -silent
+cat ./$domain/$foldername/urllist.txt | ~/aquatone/./aquatone -chrome-path $chromiumPath -out ./$domain/$foldername/aqua_out -threads $auquatoneThreads -silent
 
 
 }
